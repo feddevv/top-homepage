@@ -1,5 +1,6 @@
 @import url(./hero.css);
 @import url(./projects.css);
+@import url(./footer.css);
 
 :root {
   --primary: #0886a4;
