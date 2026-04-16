@@ -21,6 +21,7 @@
 
 .project > img {
   width: 100%;
+  height: auto;
 }
 
 .project-title-line {
