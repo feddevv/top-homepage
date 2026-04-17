@@ -26,10 +26,15 @@
 .hero-image-wrapper {
   position: relative;
   box-shadow: var(--shadow);
+
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .hero-image-wrapper img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-image-wrapper h1 {
@@ -45,9 +50,12 @@
   background-color: white;
   padding: 1.8rem;
   box-shadow: var(--shadow);
+
+  flex: 1;
 }
 
 .hero-text-wrapper h2 {
+  font-size: clamp(2rem, 2.4rem, 10rem);
   margin-bottom: 1.4rem;
 }
 
@@ -66,4 +74,27 @@
 .hero-text-wrapper .icons :nth-child(1),
 .hero-text-wrapper .icons :nth-child(2) {
   margin-right: 0.5rem;
+}
+
+.hero-text-image-wrapper {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hero-content {
+    display: block;
+    position: relative;
+  }
+
+  .hero-image-wrapper {
+    float: left;
+    margin-right: 1rem;
+    margin-left: -3rem;
+    margin-top: -3rem;
+  }
+
+  .hero-text-wrapper h2 {
+    margin-top: 4rem;
+    text-align: center;
+  }
 }

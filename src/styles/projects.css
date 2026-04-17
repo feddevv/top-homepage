@@ -44,3 +44,15 @@
 .project-title-line .icons > :nth-child(1) {
   margin-right: 0.5rem;
 }
+
+@media (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 565px) {
+  .projects-container {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
