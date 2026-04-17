@@ -20,7 +20,7 @@ body {
 header,
 main,
 footer {
-  padding: 2rem 3rem;
+  padding: min(4rem, 8%);
 }
 
 h1,
