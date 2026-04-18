@@ -19,7 +19,8 @@ body {
 
 header,
 main,
-footer {
+.contact-content,
+.footer-img-cont {
   padding: min(4rem, 8%);
 }
 
