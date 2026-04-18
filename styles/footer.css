@@ -52,6 +52,12 @@ footer .icons {
   gap: 0.7rem;
 }
 
+@media (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 500px) {
   footer {
     flex-direction: column;
