@@ -37,7 +37,6 @@
 }
 
 .hero-image-wrapper h1 {
-
   position: absolute;
   bottom: 0.2rem;
   left: 50%;
@@ -55,7 +54,6 @@
 }
 
 .hero-text-wrapper h2 {
-  font-size: clamp(2rem, 2.5vw, 4.5rem);
   margin-bottom: 1.4rem;
 }
 
