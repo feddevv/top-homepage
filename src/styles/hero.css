@@ -37,7 +37,6 @@
 }
 
 .hero-image-wrapper h1 {
-  font-size: clamp(1.5rem, 7vw + 1rem, 3.3rem);
 
   position: absolute;
   bottom: 0.2rem;
