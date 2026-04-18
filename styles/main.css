@@ -19,8 +19,9 @@ body {
 
 header,
 main,
-footer {
-  padding: 4rem 4rem;
+.contact-content,
+.footer-img-cont {
+  padding: min(4rem, 8%);
 }
 
 h1,
@@ -37,10 +38,14 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw + 1rem, 4rem);
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: clamp(1.625rem, 3vw + 1rem, 2.25rem);
   font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.375rem, 2vw + 1rem, 1.75rem);
 }

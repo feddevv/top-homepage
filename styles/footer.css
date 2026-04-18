@@ -8,7 +8,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
 }
 
 .contact-content {
@@ -27,6 +27,8 @@ footer p {
 .footer-img-cont img {
   width: 100%;
   height: auto;
+
+  display: block;
 }
 
 .margin-bottom {
@@ -48,4 +50,14 @@ a[href^='mailto'] {
 footer .icons {
   display: flex;
   gap: 0.7rem;
+}
+
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer .footer-img-cont {
+    padding: 0;
+  }
 }

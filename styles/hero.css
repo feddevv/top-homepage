@@ -1,0 +1,147 @@
+.hero-section {
+  position: relative;
+}
+
+.hero-content {
+  --shadow: 0px 0px 6px rgb(0 0 0 / 0.4);
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.blue-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 100%);
+  z-index: 1;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  box-shadow: var(--shadow);
+
+  flex: 0 1 auto;
+}
+
+.hero-image-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image-wrapper h1 {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: fit-content;
+}
+
+.hero-text-wrapper {
+  background-color: white;
+  padding: 1.8rem;
+  box-shadow: var(--shadow);
+
+  flex: 1;
+}
+
+.hero-text-wrapper h2 {
+  margin-bottom: 1.4rem;
+}
+
+.hero-text-wrapper p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+  color: var(--text-secondary);
+}
+
+.hero-text-wrapper .icons {
+  width: fit-content;
+  margin: 0 0 0 auto;
+}
+
+.hero-text-wrapper .icons :nth-child(1),
+.hero-text-wrapper .icons :nth-child(2) {
+  margin-right: 0.5rem;
+}
+
+.hero-text-image-wrapper {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hero-content {
+    display: block;
+    position: relative;
+  }
+
+  .hero-image-wrapper {
+    float: left;
+    margin: -2.2rem 1rem 0 -2.2rem;
+
+    width: 40%;
+    min-width: 250px;
+  }
+
+  .hero-image-wrapper img {
+    width: 100%;
+    min-width: inherit;
+  }
+
+  .hero-text-wrapper h2 {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .hero-image-wrapper h1 {
+    right: -7rem;
+    top: -0.7rem;
+    left: auto;
+    bottom: auto;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-image-wrapper {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero-image-wrapper h1 {
+    position: absolute;
+    bottom: 0.2rem;
+
+    top: auto;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .blue-bg {
+    height: 30%;
+  }
+
+  .hero-text-wrapper {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .hero-text-wrapper h2 {
+    margin-top: 1rem;
+  }
+
+  .hero-text-wrapper .icons {
+    margin: 0 auto;
+  }
+}

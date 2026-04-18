@@ -28,12 +28,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 
   margin-bottom: 0.6rem;
 }
 
 .project-title-line h3 {
-  font-size: 1.5rem;
   font-weight: 500;
 }
 
